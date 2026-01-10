@@ -8,4 +8,4 @@ execute as @a[tag=!boogeyman] at @s run playsound minecraft:entity.experience_or
 title @a[tag=boogeyman] title {text:"The Boogeyman",color:"red"}
 title @a[tag=!boogeyman] title {text:"NOT The Boogeyman",color:"green"}
 
-tellraw @a[tag=boogeyman] [{text:"You are the ",color:"gray"},{text:"Boogeyman",color:"red"},{text:". You must kill one player in this session to be cured. If you should fail, you will turn ",color:"gray"},{text:"Red ",color:"red"},{text:"the next session. All alliances and ties are severed while you are the Boogeyman",color:"gray"}]
+tellraw @a[tag=boogeyman] [{text:"You are the ",color:"gray"},{text:"Boogeyman",color:"red"},{text:". You must kill any ",color:"gray"},{text:"Green ",color:"green"},{text:"or ",color:"gray"},{text:"Yellow ",color:"yellow"},{text:"player in this session to be cured. If you should fail, you will turn ",color:"gray"},{text:"Red ",color:"red"},{text:"next session. All alliances and ties are severed while you are the Boogeyman.",color:"gray"}]

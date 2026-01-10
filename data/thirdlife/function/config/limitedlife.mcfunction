@@ -9,14 +9,14 @@ gamerule pvp false
 
 # Settings
 scoreboard players set #thirdlife settings 0
-scoreboard players set #lastlife settings 1
-scoreboard players set #limitedlife settings 0
+scoreboard players set #lastlife settings 0
+scoreboard players set #limitedlife settings 1
 scoreboard players set $boogeyman settings 1
-scoreboard players set $lifetransfer settings 1
+scoreboard players set $lifetransfer settings 0
 
 # Scoreboards
+scoreboard players set @a time 86400
 scoreboard players reset @a lives
-scoreboard players reset @a time
 
 # Teams
 team leave @a
@@ -31,5 +31,5 @@ time set 0
 gamemode survival @a
 
 # Message
-title @s actionbar {text:"Last Life Selected",color:"yellow"}
+title @s actionbar {text:"Limited Life Selected",color:"red"}
 execute at @s run playsound minecraft:entity.experience_orb.pickup master @s

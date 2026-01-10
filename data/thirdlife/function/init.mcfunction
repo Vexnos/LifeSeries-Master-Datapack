@@ -6,6 +6,13 @@ scoreboard objectives add settings dummy
 scoreboard objectives add rolls dummy
 scoreboard objectives add givelife trigger
 scoreboard objectives add countdown dummy
+scoreboard objectives add time dummy
+scoreboard objectives add 30 trigger
+scoreboard objectives add death trigger
+scoreboard objectives add cure trigger
+scoreboard objectives add seconds dummy
+scoreboard objectives add minutes dummy
+scoreboard objectives add hours dummy
 
 # Teams
 team add dark_green
