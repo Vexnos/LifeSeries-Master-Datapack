@@ -5,6 +5,7 @@ scoreboard objectives add kills minecraft.custom:minecraft.player_kills
 scoreboard objectives add settings dummy
 scoreboard objectives add rolls dummy
 scoreboard objectives add givelife trigger
+scoreboard objectives add countdown dummy
 
 # Teams
 team add dark_green
