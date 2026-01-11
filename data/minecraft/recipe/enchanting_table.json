@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "B": "book",
+        "D": "structure_void",
+        "O": "obsidian"
+    },
+    "pattern": [
+        " B ",
+        "DOD",
+        "OOO"
+    ],
+    "result": {
+        "count": 1,
+        "id": "minecraft:enchanting_table"
+    }
+}
