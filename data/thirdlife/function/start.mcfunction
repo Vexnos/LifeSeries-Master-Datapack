@@ -13,6 +13,8 @@ execute if score #lastlife settings matches 1 at @a run playsound minecraft:ui.b
 # Boogeyman
 execute if score $boogeyman settings matches 1 run schedule function thirdlife:boogeyman/notice 300s
 
+execute if score #lastlife settings matches 1 run effect give @a resistance 120 9 true
+
 # Timer
 execute if score #limitedlife settings matches 1 run function thirdlife:time/time
 
