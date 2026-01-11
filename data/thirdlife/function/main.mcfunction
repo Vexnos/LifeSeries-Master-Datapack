@@ -16,3 +16,13 @@ execute if score #limitedlife settings matches 1 as @a[scores={death=1..},tag=!o
 execute if score $lifetransfer settings matches 1 run scoreboard players enable @a[tag=!out,team=!red] givelife
 execute if score $lifetransfer settings matches 1 as @a[scores={givelife=1..}] run function thirdlife:lifetransfer/checkplayer
 execute if score $lifetransfer settings matches 0 run scoreboard players set @a givelife 0
+
+# Triggers
+scoreboard players enable @a[tag=admin] start
+scoreboard players enable @a[tag=admin] pause
+scoreboard players enable @a[tag=admin] resume
+scoreboard players enable @a[tag=admin] config
+execute as @a[scores={start=1..}] run function thirdlife:triggers/start
+execute as @a[scores={pause=1..}] run function thirdlife:triggers/pause
+execute as @a[scores={resume=1..}] run function thirdlife:triggers/resume
+execute as @a[scores={config=1..}] run function thirdlife:triggers/config

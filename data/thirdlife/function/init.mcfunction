@@ -13,6 +13,10 @@ scoreboard objectives add cure trigger
 scoreboard objectives add seconds dummy
 scoreboard objectives add minutes dummy
 scoreboard objectives add hours dummy
+scoreboard objectives add pause trigger
+scoreboard objectives add resume trigger
+scoreboard objectives add config trigger
+scoreboard objectives add start trigger
 
 scoreboard players set #seconds seconds 60
 scoreboard players set #minutes minutes 60
