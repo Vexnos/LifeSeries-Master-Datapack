@@ -10,6 +10,9 @@ execute if score #lastlife settings matches 1 run schedule function thirdlife:ra
 execute if score #lastlife settings matches 1 run tellraw @a {text:"Randomly Generating Lives in 2 Minutes",color:"gray"}
 execute if score #lastlife settings matches 1 at @a run playsound minecraft:ui.button.click master @s
 
+# Boogeyman
+execute if score $boogeyman settings matches 1 run schedule function thirdlife:boogeyman/notice 300s
+
 # Timer
 execute if score #limitedlife settings matches 1 run function thirdlife:time/time
 

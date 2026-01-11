@@ -1,7 +1,7 @@
 # Gamerules
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
-gamerule keepInventory false
+gamerule keepInventory true
 gamerule doFireTick true
 gamerule locatorBar false
 gamerule doMobSpawning false

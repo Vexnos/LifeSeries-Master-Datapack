@@ -14,6 +14,10 @@ scoreboard objectives add seconds dummy
 scoreboard objectives add minutes dummy
 scoreboard objectives add hours dummy
 
+scoreboard players set #seconds seconds 60
+scoreboard players set #minutes minutes 60
+scoreboard players set #hours hours 3600
+
 # Teams
 team add dark_green
 team modify dark_green color dark_green
