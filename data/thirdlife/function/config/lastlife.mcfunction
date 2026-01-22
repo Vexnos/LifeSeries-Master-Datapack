@@ -26,9 +26,16 @@ tag @a remove out
 
 # Time
 time set 0
+weather clear
 
 # Gamemode
 gamemode survival @a
+
+# Functions
+schedule clear thirdlife:time/time
+schedule clear thirdlife:boogeyman/countdown
+schedule clear thirdlife:boogeyman/choose
+schedule clear thirdlife:random/notice
 
 # Message
 title @s actionbar {text:"Last Life Selected",color:"yellow"}
