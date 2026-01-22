@@ -3,7 +3,8 @@ execute unless score #limitedlife settings matches 1 run function thirdlife:live
 execute if score #limitedlife settings matches 1 run function thirdlife:time/color
 execute as @a[scores={kills=1..}] run function thirdlife:lives/kill
 execute if score #limitedlife settings matches 0 as @a[scores={deaths=1..},tag=!out] run function thirdlife:lives/death
-execute if score #limitedlife settings matches 1 as @a[scores={deaths=1..},tag=!out] run function thirdlife:time/death
+execute if score #limitedlife settings matches 1 as @a[scores={deaths=1..},tag=!out,advancements={thirdlife:died_to_boogeyman=false}] run function thirdlife:time/death
+execute if score #limitedlife settings matches 1 as @a[scores={deaths=1..},tag=!out,advancements={thirdlife:died_to_boogeyman=true}] run function thirdlife:time/boogey_death
 
 execute if score #limitedlife settings matches 1 run scoreboard players enable @a[tag=!out] 30
 execute unless score #thirdlife settings matches 1 run scoreboard players enable @a[tag=!out,tag=boogeyman] cure

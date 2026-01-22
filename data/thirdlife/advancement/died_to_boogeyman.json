@@ -1,0 +1,12 @@
+{
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:entity_killed_player",
+            "conditions": {
+                "entity": {
+                    "nbt": "{Tags:['boogeyman']}"
+                }
+            }
+        }
+    }
+}
