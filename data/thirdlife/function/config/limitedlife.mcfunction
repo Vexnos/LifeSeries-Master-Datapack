@@ -35,6 +35,7 @@ gamemode survival @a
 schedule clear thirdlife:time/time
 schedule clear thirdlife:boogeyman/countdown
 schedule clear thirdlife:boogeyman/choose
+schedule clear thirdlife:boogeyman/notice
 schedule clear thirdlife:random/notice
 
 # Message
