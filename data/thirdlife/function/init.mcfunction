@@ -17,6 +17,8 @@ scoreboard objectives add pause trigger
 scoreboard objectives add resume trigger
 scoreboard objectives add config trigger
 scoreboard objectives add start trigger
+scoreboard objectives add hp health {text:"❤",color:"red"}
+scoreboard objectives setdisplay below_name hp
 
 scoreboard players set #seconds seconds 60
 scoreboard players set #minutes minutes 60

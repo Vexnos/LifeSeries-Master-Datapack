@@ -15,6 +15,10 @@ execute if score $boogeyman settings matches 1 run schedule function thirdlife:b
 
 execute if score #lastlife settings matches 1 run effect give @a resistance 120 9 true
 
+# Scores
+execute if score #limitedlife settings matches 0 run scoreboard objectives setdisplay list lives
+execute if score #limitedlife settings matches 1 run scoreboard objectives setdisplay list
+
 # Timer
 execute if score #limitedlife settings matches 1 run function thirdlife:time/time
 
