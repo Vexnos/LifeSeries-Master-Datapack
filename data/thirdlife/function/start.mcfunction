@@ -8,7 +8,7 @@ execute unless score #lastlife settings matches 1 run gamerule pvp true
 execute if score #lastlife settings matches 1 run scoreboard players set #rolls rolls 120
 execute if score #lastlife settings matches 1 run schedule function thirdlife:random/notice 120s
 execute if score #lastlife settings matches 1 run tellraw @a {text:"Randomly Generating Lives in 2 Minutes",color:"gray"}
-execute if score #lastlife settings matches 1 at @a run playsound minecraft:ui.button.click master @s
+execute if score #lastlife settings matches 1 as @a at @s run playsound minecraft:ui.button.click master @s
 
 # Boogeyman
 execute if score $boogeyman settings matches 1 run schedule function thirdlife:boogeyman/notice 300s
