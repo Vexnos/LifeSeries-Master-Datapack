@@ -17,6 +17,8 @@ scoreboard objectives add pause trigger
 scoreboard objectives add resume trigger
 scoreboard objectives add config trigger
 scoreboard objectives add start trigger
+scoreboard objectives add boogeyman trigger
+scoreboard objectives add roll trigger
 scoreboard objectives add hp health {text:"❤",color:"red"}
 scoreboard objectives setdisplay below_name hp
 
@@ -39,3 +41,7 @@ team modify red color red
 
 team add dead
 team modify dead color gray
+
+# Reload Message
+title @a[tag=admin] actionbar {text:"Reloaded!",color:"green"}
+execute as @a[tag=admin] at @s run playsound minecraft:block.beacon.activate master @s

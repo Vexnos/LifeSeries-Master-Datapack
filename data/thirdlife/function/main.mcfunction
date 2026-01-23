@@ -23,7 +23,11 @@ scoreboard players enable @a[tag=admin] start
 scoreboard players enable @a[tag=admin] pause
 scoreboard players enable @a[tag=admin] resume
 scoreboard players enable @a[tag=admin] config
+scoreboard players enable @a[tag=admin] boogeyman
+scoreboard players enable @a[tag=admin] roll
 execute as @a[scores={start=1..}] run function thirdlife:triggers/start
 execute as @a[scores={pause=1..}] run function thirdlife:triggers/pause
 execute as @a[scores={resume=1..}] run function thirdlife:triggers/resume
 execute as @a[scores={config=1..}] run function thirdlife:triggers/config
+execute as @a[scores={boogeyman=1..}] run function thirdlife:boogeyman/trigger
+execute as @a[scores={roll=1..}] run function thirdlife:random/trigger
