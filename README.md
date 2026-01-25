@@ -21,7 +21,7 @@ Click on either Third Life, Last Life or Limited Life.
 2. To Pause your session, run `/trigger pause`, likewise to resume, run `/trigger resume`.
 3. The boogeyman runs automatically on modes where it's enabled. To manually run the boogeyman, run `/trigger boogeyman`.
     * If the Boogeyman succeeds, they will automatically be cured unless a player is killed by a trap. If the kill was the Boogeyman's but they aren't cured, instruct that player to run `/trigger cure`
-    * If the Boogeyman fails, then run `/function thirdlife:boogeyman/fail` to fail all boogeymen who haven't killed a player at the end of your session.
+    * If the Boogeyman fails, then run `/trigger fail` to fail all boogeymen who haven't killed a player at the end of your session.
 4. To transfer lives in Last Life, run `/trigger givelife`, you need to be within 5 blocks of a player to transfer a life, you cannot transfer a life as a red name or if you're out. The closest player to you will get the life.
 5. Lives will randomly be rolled in Last Life after 2 Minutes of starting the game. If you want to run this earlier, run `/trigger roll`.
 6. In Limited Life, players get +30 minutes extra time if they kill a player who is a higher colour than them, I chose not to run this automatically as players shouldn't be rewarded time for killing players on a lower or the same color as themselves. If a kill is valid, that player should run `/trigger 30` to add 30 minutes. Players who die to the Boogeyman in Limited Life lose an extra hour of time. While this is done automatically by a direct kill, it will not trigger if the player died to a trap, so they will need to run `/trigger death` to lose that extra hour.

@@ -19,6 +19,7 @@ scoreboard objectives add config trigger
 scoreboard objectives add start trigger
 scoreboard objectives add boogeyman trigger
 scoreboard objectives add roll trigger
+scoreboard objectives add fail trigger
 scoreboard objectives add hp health {text:"❤",color:"red"}
 scoreboard objectives setdisplay below_name hp
 
