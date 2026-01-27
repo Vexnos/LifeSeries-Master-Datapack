@@ -1,8 +1,9 @@
 scoreboard players remove @s lives 1
 scoreboard players add @a[tag=addlife] lives 1
 
-execute at @a[tag=addlife] run particle minecraft:totem_of_undying ~ ~1 ~ 0.5 1 0.5 0.25 100 force
-execute at @s run particle minecraft:effect{color:[0.5,1,0.2]} ~ ~1 ~ 0.5 0.5 0.5 1 100 force
+execute at @a[tag=addlife] run particle minecraft:happy_villager ~ ~1 ~ 0.4 0.8 0.4 0 100 force
+# execute at @s run particle minecraft:effect{color:[0.5,1,0.2]} ~ ~1 ~ 0.5 0.5 0.5 1 100 force
+execute at @s run particle minecraft:totem_of_undying ~ ~1 ~ 0.5 1 0.5 0.25 100 force
 execute as @s at @s run playsound minecraft:item.totem.use master @s
 execute as @a[tag=addlife] at @s run playsound minecraft:item.totem.use master @s
 
