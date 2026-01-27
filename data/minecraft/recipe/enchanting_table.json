@@ -1,15 +1,8 @@
 {
-    "type": "minecraft:crafting_shaped",
+    "type": "minecraft:crafting_shapeless",
     "category": "misc",
-    "key": {
-        "B": "book",
-        "D": "structure_void",
-        "O": "obsidian"
-    },
-    "pattern": [
-        " B ",
-        "DOD",
-        "OOO"
+    "ingredients": [
+        "structure_void"
     ],
     "result": {
         "count": 1,
