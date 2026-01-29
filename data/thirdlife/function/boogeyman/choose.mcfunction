@@ -2,8 +2,8 @@ execute store result score #boogeymen rolls run random value 1..3
 
 execute if score #boogeymen rolls matches 1 run tag @r[tag=!out,team=!red,limit=1] add boogeyman
 execute if score #boogeymen rolls matches 2 run tag @r[tag=!out,team=!red,limit=2] add boogeyman
-execute if score #boogeymen rolls matches 2 run tag @r[tag=!out,team=!red,limit=3] add boogeyman
-execute as @a[tag=boogeyman] at @s run playsound minecraft:entity.wither.spawn master @s
+execute if score #boogeymen rolls matches 3 run tag @r[tag=!out,team=!red,limit=3] add boogeyman
+execute as @a[tag=boogeyman] at @s run playsound lastlife:boogeyman master @s
 execute as @a[tag=!boogeyman] at @s run playsound minecraft:entity.experience_orb.pickup master @s
 
 title @a[tag=boogeyman] title {text:"The Boogeyman",color:"red"}
