@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shaped",
     "category": "misc",
     "key": {
-        "#": "minecraft:iron_block",
-        "$": "minecraft:blaze_rod"
+        "#": "minecraft:iron_bars"
     },
     "pattern": [
         "###",
-        "#$#",
+        "# #",
         "###"
     ],
     "result": {
