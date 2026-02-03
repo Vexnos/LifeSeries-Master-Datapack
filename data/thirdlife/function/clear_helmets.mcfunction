@@ -1,5 +1,5 @@
 #
-# Description: Clear helmets from players
+# Description: Clear helmets from players every 5 seconds
 # Called by: thirdlife:init
 # Entity @s: Player
 #

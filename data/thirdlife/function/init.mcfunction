@@ -1,4 +1,10 @@
+#
+# Description: Initialize Scoreboards and Teams
+# Called by: #minecraft:load
+# Entity @s: None
+#
 # Scoreboards
+#
 scoreboard objectives add lives dummy
 scoreboard objectives add deaths deathCount
 scoreboard objectives add kills minecraft.custom:minecraft.player_kills
@@ -22,12 +28,15 @@ scoreboard objectives add roll trigger
 scoreboard objectives add fail trigger
 scoreboard objectives add hp health {text:"❤",color:"red"}
 scoreboard objectives setdisplay below_name hp
-
+#
+# Values for time conversion
+#
 scoreboard players set #seconds seconds 60
 scoreboard players set #minutes minutes 60
 scoreboard players set #hours hours 3600
-
+#
 # Teams
+#
 team add dark_green
 team modify dark_green color dark_green
 
@@ -42,7 +51,12 @@ team modify red color red
 
 team add dead
 team modify dead color gray
-
+#
+# Clear Helmets
+#
+function thirdlife:clear_helmets
+#
 # Reload Message
+#
 title @a[tag=admin] actionbar {text:"Reloaded!",color:"green"}
 execute as @a[tag=admin] at @s run playsound minecraft:block.beacon.activate master @s
