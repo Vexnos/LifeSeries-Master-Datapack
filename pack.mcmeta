@@ -4,7 +4,32 @@
         "pack_format": 88,
         "min_format": [88, 0],
         "max_format": [88, 0],
-        "description": "Last Life Datapack Version 1.21.10"
+        "description": [
+            {
+                "text": "Last ",
+                "color": "green"
+            },
+            {
+                "text": "Life ",
+                "color": "yellow"
+            },
+            {
+                "text": "Datapack\n",
+                "color": "red"
+            },
+            {
+                "text": "by Vexnos ",
+                "color": "gold"
+            },
+            {
+                "text": "Version: ",
+                "color": "gray"
+            },
+            {
+                "text": "1.21.10",
+                "color": "green"
+            }
+        ]
     },
     "filter": {
         "block": [
