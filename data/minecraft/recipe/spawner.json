@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "#": "minecraft:iron_block",
+        "$": "minecraft:blaze_rod"
+    },
+    "pattern": [
+        "###",
+        "#$#",
+        "###"
+    ],
+    "result": {
+        "id": "minecraft:spawner",
+        "count": 1
+    }
+}
