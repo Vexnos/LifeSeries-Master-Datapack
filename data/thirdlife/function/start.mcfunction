@@ -39,6 +39,10 @@ execute if score #limitedlife settings matches 1 run function thirdlife:time/tim
 title @a actionbar {text:"Session Started",color:"green"}
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s
 #
+# Place Enchanting Table
+#
+execute as @a[tag=admin,limit=1] run function thirdlife:enchanting_table/init
+#
 # Rules displayed for admin only
 #
 execute if score #thirdlife settings matches 1 run tellraw @a[tag=admin] [{text:"3 Lives to Live. ",color:"gray"},{text:"Green ",color:"green"},{text:"and ",color:"gray"},{text:"Yellow ",color:"yellow"},{text:"players cannot kill other players with the exception of self defense. "},{text:"Red ",color:"red"},{text:"players are hostile to everyone and can kill other players.",color:"gray"}]
