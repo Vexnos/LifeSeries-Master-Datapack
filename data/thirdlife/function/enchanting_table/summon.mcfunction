@@ -1,11 +1,16 @@
 #
-# Description: Initialize the Enchanting Table spawn sequence
+# Description: Summon falling Enchanting Table
 # Called by: thirdlife:start
 # Entity @s: Player
 #
-# Summon armor stand to target where the enchanting table will spawn
+# Poof
 #
-execute at @s run summon armor_stand ~ ~ ~ {Tags:['spawn_anchor'],Invisible:1b,Invulnerable:1b,NoGravity:1b}
+execute at @e[tag=spawn_anchor,limit=1] run particle poof ~ ~150 ~ 1 1 1 0.75 500 force
+#
+# Sounds
+#
+execute at @e[tag=spawn_anchor,limit=1] run playsound minecraft:block.portal.travel master @a ~ ~150 ~ 100 2
+execute at @e[tag=spawn_anchor,limit=1] run playsound minecraft:entity.lightning_bolt.impact master @a ~ ~150 ~ 100 0
 #
 # Summon falling blocks
 #

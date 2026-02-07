@@ -32,6 +32,11 @@ execute if score $lifetransfer settings matches 1 run scoreboard players enable 
 execute if score $lifetransfer settings matches 1 as @a[scores={givelife=1..}] run function thirdlife:lifetransfer/checkplayer
 execute if score $lifetransfer settings matches 0 run scoreboard players set @a givelife 0
 #
+# Trigger to place the Enchanting Table
+#
+scoreboard players enable @a[tag=admin] placeEnchantingTable
+execute as @a[tag=admin,scores={placeEnchantingTable=1..}] run function thirdlife:enchanting_table/trigger
+#
 # Triggers for Admin use only
 #
 scoreboard players enable @a[tag=admin] start
