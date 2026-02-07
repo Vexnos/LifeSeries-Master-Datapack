@@ -12,13 +12,14 @@ execute if score #boogeymen rolls matches 3 run tag @r[tag=!out,team=!red,limit=
 #
 # Sounds
 #
-execute as @a[tag=boogeyman] at @s run playsound lastlife:boogeyman master @s
-execute as @a[tag=!boogeyman] at @s run playsound minecraft:entity.experience_orb.pickup master @s
+execute as @a[tag=boogeyman] at @s run playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 100 0
+execute as @a[tag=!boogeyman] at @s run playsound minecraft:entity.allay.ambient_without_item master @s ~ ~ ~ 100 0
 #
 # Titles
 #
 title @a[tag=boogeyman] title {text:"The Boogeyman",color:"red"}
 title @a[tag=!boogeyman] title {text:"NOT The Boogeyman",color:"green"}
+title @a times 10 70 20
 #
 # Private tellraw message to the boogeyman
 #
