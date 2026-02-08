@@ -30,6 +30,10 @@ weather clear
 #
 gamemode survival @a
 #
+# Revoke all advancements
+#
+advancement revoke @a everything
+#
 # Functions
 #
 schedule clear thirdlife:time/time
