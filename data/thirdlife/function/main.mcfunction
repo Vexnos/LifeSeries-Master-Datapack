@@ -32,11 +32,6 @@ execute if score $lifetransfer settings matches 1 run scoreboard players enable 
 execute if score $lifetransfer settings matches 1 as @a[scores={givelife=1..}] run function thirdlife:lifetransfer/checkplayer
 execute if score $lifetransfer settings matches 0 run scoreboard players set @a givelife 0
 #
-# Trigger to place the Enchanting Table
-#
-scoreboard players enable @a[tag=admin] placeEnchantingTable
-execute as @a[tag=admin,scores={placeEnchantingTable=1..}] run function thirdlife:enchanting_table/trigger
-#
 # Triggers for Admin use only
 #
 scoreboard players enable @a[tag=admin] start
@@ -46,6 +41,8 @@ scoreboard players enable @a[tag=admin] config
 scoreboard players enable @a[tag=admin] boogeyman
 scoreboard players enable @a[tag=admin] roll
 scoreboard players enable @a[tag=admin] fail
+scoreboard players enable @a[tag=admin] placeEnchantingTable
+scoreboard players enable @a[tag=admin] placeSpawn
 execute as @a[scores={start=1..}] run function thirdlife:triggers/start
 execute as @a[scores={pause=1..}] run function thirdlife:triggers/pause
 execute as @a[scores={resume=1..}] run function thirdlife:triggers/resume
@@ -53,3 +50,5 @@ execute as @a[scores={config=1..}] run function thirdlife:triggers/config
 execute as @a[scores={boogeyman=1..}] run function thirdlife:boogeyman/trigger
 execute as @a[scores={roll=1..}] run function thirdlife:random/trigger
 execute as @a[scores={fail=1..}] run function thirdlife:boogeyman/fail
+execute as @a[tag=admin,scores={placeEnchantingTable=1..}] run function thirdlife:enchanting_table/trigger
+execute as @a[tag=admin,scores={placeSpawn=1..}] run function thirdlife:triggers/place_spawn
