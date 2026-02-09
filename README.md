@@ -20,7 +20,7 @@ Next, there are several config options, choose according to your preferred style
 * Enable or Disable the Boogeyman
 * Enable or Disable Life Transferring (Cannot be enabled in Limited Life because it runs on time, not lives)
 * Difficulty: Easy, Normal or Hard
-* Worldborder Size (Set your worldborder center or it will default to 0, 0): 500, 700, or 1000 (Earlier seasons of Third Life used a border size of 700, more recent seasons use a border of 500)
+* Worldborder Size (Set your worldborder center or it will default to 0, 0): 300, 400, 500, 700, or 1000 (Earlier seasons of Third Life used a border size of 700, more recent seasons use a border of 500)
 Next there are some admin only triggers to spawn the Enchanting Table and Optional Spawn Zone (Will set the world spawn)
 
 ## Gameplay
