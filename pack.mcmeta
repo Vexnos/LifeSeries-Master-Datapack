@@ -39,10 +39,6 @@
             },
             {
                 "namespace": "minecraft",
-                "path": "recipe/bookshelf"
-            },
-            {
-                "namespace": "minecraft",
                 "path": "recipe/leather_helmet"
             },
             {
