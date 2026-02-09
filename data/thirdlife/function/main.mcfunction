@@ -50,5 +50,5 @@ execute as @a[scores={config=1..}] run function thirdlife:triggers/config
 execute as @a[scores={boogeyman=1..}] run function thirdlife:boogeyman/trigger
 execute as @a[scores={roll=1..}] run function thirdlife:random/trigger
 execute as @a[scores={fail=1..}] run function thirdlife:boogeyman/fail
-execute as @a[tag=admin,scores={placeEnchantingTable=1..}] run function thirdlife:enchanting_table/trigger
-execute as @a[tag=admin,scores={placeSpawn=1..}] run function thirdlife:triggers/place_spawn
+execute as @a[scores={placeEnchantingTable=1..}] run function thirdlife:enchanting_table/trigger
+execute as @a[scores={placeSpawn=1..}] run function thirdlife:triggers/place_spawn
