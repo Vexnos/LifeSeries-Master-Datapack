@@ -48,7 +48,7 @@ Inside the datapack is a bundled function to unlock all recipes for all players.
 * Magma Cream can be crafted into Slime Balls.
 * Name Tags are craftable with 1 Paper and 1 String.
 * Saddles are craftable with 3 Leather and 1 Iron Ingot.
-* Spawners are craftable with 8 Iron Bars.
+* Spawners are craftable with 8 Iron Bars and 1 Blaze Powder.
 * End Crystals are crafted with an Amethyst Shard in place of the Eye of Ender.
 
 ### Enchanting Table Edits
