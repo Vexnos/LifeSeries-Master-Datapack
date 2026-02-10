@@ -1,0 +1,27 @@
+{
+    "boogeyman": {
+        "sounds": [
+            "lastlife:boogeyman"
+        ]
+    },
+    "boogeyman_not": {
+        "sounds": [
+            "lastlife:boogeyman_not"
+        ]
+    },
+    "boogeyman_suspense": {
+        "sounds": [
+            "lastlife:boogeyman_suspense"
+        ]
+    },
+    "boogeyman_fail": {
+        "sounds": [
+            "lastlife:boogeyman_fail"
+        ]
+    },
+    "boogeyman_cure": {
+        "sounds": [
+            "lastlife:boogeyman_cure"
+        ]
+    }
+}
