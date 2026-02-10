@@ -5,11 +5,11 @@
 #
 # Titles and Sound
 #
-title @a times 10 110 40
+title @a times 10 50 20
 title @a title {text:"You are...",color:"yellow"}
 execute as @a at @s run playsound minecraft:ui.button.click master @s
-execute as @a at @s run playsound minecraft:block.portal.trigger master @s ~ ~ ~ 100 0
+execute as @a at @s run playsound lastlife:boogeyman_suspense master @s
 #
 # Choose the Boogeyman after leaving suspense
 #
-schedule function thirdlife:boogeyman/choose 8.5s
+schedule function thirdlife:boogeyman/choose 4.5s
