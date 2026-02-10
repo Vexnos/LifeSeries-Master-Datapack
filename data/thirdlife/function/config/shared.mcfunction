@@ -12,6 +12,19 @@ gamerule locatorBar false
 gamerule doMobSpawning false
 gamerule pvp false
 #
+# Settings
+#
+scoreboard players set #thirdlife settings 0
+scoreboard players set #lastlife settings 0
+scoreboard players set #limitedlife settings 0
+scoreboard players set $boogeyman settings 0
+scoreboard players set $lifetransfer settings 0
+#
+# HP
+#
+execute as @a run attribute @s minecraft:max_health base reset
+gamerule naturalRegeneration true
+#
 # Teams
 #
 team leave @a

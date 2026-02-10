@@ -13,9 +13,7 @@ gamerule keepInventory false
 #
 # Settings
 #
-scoreboard players set #thirdlife settings 0
 scoreboard players set #lastlife settings 1
-scoreboard players set #limitedlife settings 0
 scoreboard players set $boogeyman settings 1
 scoreboard players set $lifetransfer settings 1
 #
