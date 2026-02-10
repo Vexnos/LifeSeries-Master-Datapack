@@ -57,6 +57,5 @@ Inside the datapack is a bundled function to unlock all recipes for all players.
 * Soul Speed and Swift Sneak are available in Villager Trades.
 
 ### Worldgen
-* Ancient Debris now drops Netherite Scrap (unless Silk Touched) and bonuses are applied with Fortune.
 * Ancient Debris Ore Veins are slightly more common within Nether Chunks.
 * Ancient Debris Ore Veins will not be blocked from generating if exposed to air.
