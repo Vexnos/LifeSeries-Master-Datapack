@@ -3,6 +3,8 @@ This is a datapack containing the functionality of Third Life, Last Life and Lim
 
 Version: 1.21.10
 
+Some members of the Life Series use a resource pack to make armour less visible. If you want to use this, a good option is *[Minimal Armour](https://modrinth.com/resourcepack/hoffens-minimal-armor)* by Hoffen which was the resource pack used in Wild Life.
+
 ## How to Install
 1. Click the Green "Code" button, then click "Download ZIP".
 2. Place `LifeSeries-Master-Datapack-master.zip` in your datapacks folder.
@@ -20,7 +22,8 @@ Next, there are several config options, choose according to your preferred style
 * Enable or Disable the Boogeyman
 * Enable or Disable Life Transferring (Cannot be enabled in Limited Life because it runs on time, not lives)
 * Difficulty: Easy, Normal or Hard
-* Worldborder Size (Set your worldborder center or it will default to 0, 0): 300, 400, 500, 700, or 1000 (Earlier seasons of Third Life used a border size of 700, more recent seasons use a border of 500)
+* Worldborder Size (Set your desired worldborder center or it will default to 0, 0): 300, 400, 500, 700, or 1000 (Earlier seasons of the Life Series used a border size of 700, more recent seasons use a border size of 400-500) - (IMPORTANT: In 1.21.10, the Worldborders are now separate per dimension, if you want a worldborder in the Nether and/or the End, you will need to travel to that dimension and set the worldborder manually)
+
 Next there are some admin only triggers to spawn the Enchanting Table and Optional Spawn Zone (Will set the world spawn)
 
 ## Gameplay
@@ -36,16 +39,24 @@ Next there are some admin only triggers to spawn the Enchanting Table and Option
 ### Loot
 * Some Hostile and Passive mobs have a 5% chance to drop their spawn egg, this increases with Looting.
 * Wither Skeletons have an increased chance to drop their Wither Skulls (now 5% instead of 2.5%).
+* Skeleton and Zombie Horse Spawn Eggs are available in Dungeon Chests (They will spawn already tamed and with saddles like in Secret Life).
 
 ### Custom Recipes
 Inside the datapack is a bundled function to unlock all recipes for all players.
-* Enchanting Table and Helmets are not craftable
+* Enchanting Table and Helmets are not craftable.
 * TNT is crafted with 4 Sand, 4 Paper and 1 Gunpowder. This recipe grants the player 2 TNT per craft.
-* Magma Cream can be crafted into Slime Balls
-* Name Tags are craftable with 1 Paper and 1 String
-* Saddles are craftable with 3 Leather and 1 Iron Ingot
-* Spawners are craftable with 8 Iron Bars
+* Magma Cream can be crafted into Slime Balls.
+* Name Tags are craftable with 1 Paper and 1 String.
+* Saddles are craftable with 3 Leather and 1 Iron Ingot.
+* Spawners are craftable with 8 Iron Bars.
+* End Crystals are crafted with an Amethyst Shard in place of the Eye of Ender.
 
 ### Enchanting Table Edits
-* Mending is now available from the Enchanting Table
-* Silk Touch and Mending have higher weights, allowing them to appear more frequently in the Enchanting Table
+* Mending, Swift Sneak, and Soul Speed are now available from the Enchanting Table.
+* Silk Touch and Mending have higher weights, allowing them to appear more frequently in the Enchanting Table.
+* Soul Speed and Swift Sneak are available in Villager Trades.
+
+### Worldgen
+* Ancient Debris now drops Netherite Scrap (unless Silk Touched) and bonuses are applied with Fortune.
+* Ancient Debris Ore Veins are slightly more common within Nether Chunks.
+* Ancient Debris Ore Veins will not be blocked from generating if exposed to air.
