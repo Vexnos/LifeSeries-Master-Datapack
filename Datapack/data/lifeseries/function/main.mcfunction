@@ -44,6 +44,7 @@ scoreboard players enable @a[tag=admin] fail
 scoreboard players enable @a[tag=admin] placeEnchantingTable
 scoreboard players enable @a[tag=admin] placeSpawn
 scoreboard players enable @a[tag=admin] setSessionTime
+scoreboard players enable @a[tag=admin] getSessionTime
 execute as @a[scores={start=1..}] run function lifeseries:triggers/start
 execute as @a[scores={pause=1..}] run function lifeseries:triggers/pause
 execute as @a[scores={resume=1..}] run function lifeseries:triggers/resume
@@ -54,4 +55,4 @@ execute as @a[scores={fail=1..}] run function lifeseries:boogeyman/fail
 execute as @a[scores={placeEnchantingTable=1..}] run function lifeseries:enchanting_table/trigger
 execute as @a[scores={placeSpawn=1..}] run function lifeseries:triggers/place_spawn
 execute as @a[scores={setSessionTime=1..}] run function lifeseries:time/session/trigger
-execute as @a[scores={setSessionTime=-1}] run function lifeseries:time/session/trigger
+execute as @a[scores={getSessionTime=1..}] run function lifeseries:triggers/getsessiontime
