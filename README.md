@@ -55,7 +55,3 @@ Inside the datapack is a bundled function to unlock all recipes for all players.
 * Mending, Swift Sneak, and Soul Speed are now available from the Enchanting Table.
 * Silk Touch and Mending have higher weights, allowing them to appear more frequently in the Enchanting Table.
 * Soul Speed and Swift Sneak are available in Villager Trades.
-
-### Worldgen
-* Ancient Debris Ore Veins are slightly more common within Nether Chunks.
-* Ancient Debris Ore Veins will not be blocked from generating if exposed to air.
