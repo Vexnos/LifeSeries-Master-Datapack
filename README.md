@@ -6,11 +6,12 @@ Version: 1.21.10
 Some members of the Life Series use a resource pack to make armour less visible. If you want to use this, a good option is *[Minimal Armour](https://modrinth.com/resourcepack/hoffens-minimal-armor)* by Hoffen which was the resource pack used in Wild Life.
 
 ## How to Install
-1. Click the Green "Code" button, then click "Download ZIP".
-2. Place `LifeSeries-Master-Datapack-master.zip` in your datapacks folder.
-3. If you are in the world already, type `/reload`, a notification should come up in Minecraft.
-4. Run `/tag <player> add admin` where `<player>` is the username of the player running the datapack.
-5. Run `/trigger config` to pull up the config menu. Refer to the config section below.
+1. Go to the 'Releases' page and download the datapack and resourcepack from there.
+2. Place `LifeSeries_Data_v1.0.0.zip` in your datapacks folder.
+3. Place `LifeSeries_Resources_v1.0.0.zip` in your resourcepacks folder.
+4. Run `/tag <player> add admin` where `<player>` is the username of the player acting as the admin.
+5. If you are in the world already, type `/reload`, a notification should come up in Minecraft.
+6. Run `/trigger config` to pull up the config menu. Refer to the config section below.
 
 ## Config
 When you run `/trigger config`, a text message will appear in chat.
@@ -18,10 +19,12 @@ Click on either Third Life, Last Life or Limited Life.
 * Third Life: 3 Lives, no Boogeyman, no Life Transferring.
 * Last Life: Random amount of Lives, Boogeyman, Life Transferring.
 * Limited Life: 24 Hours to Live, Boogeyman, no Life Transferring.
-Next, there are several config options, choose according to your preferred style.
-* Enable or Disable the Boogeyman
-* Enable or Disable Life Transferring (Cannot be enabled in Limited Life because it runs on time, not lives)
-* Difficulty: Easy, Normal or Hard
+Next, there are several config options for customization, choose according to your preferred style if you don't want to play the pre-set modes above.
+* Amount of Lives in Third Life: Either 3 or 6.
+* Enable or Disable the Boogeyman.
+* Enable or Disable Life Transferring (Cannot be enabled in Limited Life because it runs on time, not lives).
+* Difficulty: Easy, Normal or Hard.
+* keepInventory: On or Off (Is already set in pre-set modes).
 * Worldborder Size (Set your desired worldborder center or it will default to 0, 0): 300, 400, 500, 700, or 1000 (Earlier seasons of the Life Series used a border size of 700, more recent seasons use a border size of 400-500) - (IMPORTANT: In 1.21.10, the Worldborders are now separate per dimension, if you want a worldborder in the Nether and/or the End, you will need to travel to that dimension and set the worldborder manually)
 
 Next there are some admin only triggers to spawn the Enchanting Table and Optional Spawn Zone (Will set the world spawn)
