@@ -17,6 +17,7 @@ schedule clear lifeseries:boogeyman/notice
 schedule clear lifeseries:boogeyman/choose_notice
 schedule clear lifeseries:boogeyman/1_minute
 schedule clear lifeseries:boogeyman/countdown
+schedule clear lifeseries:time/session/count_down
 #
 # Title
 #

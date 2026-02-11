@@ -28,6 +28,8 @@ scoreboard objectives add roll trigger
 scoreboard objectives add fail trigger
 scoreboard objectives add placeEnchantingTable trigger
 scoreboard objectives add placeSpawn trigger
+scoreboard objectives add setSessionTime trigger
+scoreboard objectives add sessionTime dummy
 scoreboard objectives add hp health {text:"❤",color:"red"}
 scoreboard objectives setdisplay below_name hp
 #

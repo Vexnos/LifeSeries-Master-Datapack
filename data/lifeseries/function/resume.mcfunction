@@ -13,6 +13,7 @@ gamerule pvp true
 # Timer
 #
 execute if score #limitedlife settings matches 1 run function lifeseries:time/time
+execute unless score &set_time sessionTime matches -1 run function lifeseries:time/session/count_down
 #
 # Boogeyman
 #

@@ -19,6 +19,7 @@ scoreboard players set #lastlife settings 0
 scoreboard players set #limitedlife settings 0
 scoreboard players set $boogeyman settings 0
 scoreboard players set $lifetransfer settings 0
+scoreboard players set &time sessionTime 0
 #
 # HP
 #

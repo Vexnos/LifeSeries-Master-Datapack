@@ -30,9 +30,10 @@ execute if score #lastlife settings matches 1 run effect give @a resistance 120 
 execute if score #limitedlife settings matches 0 run scoreboard objectives setdisplay list lives
 execute if score #limitedlife settings matches 1 run scoreboard objectives setdisplay list
 #
-# Timer for Limited Life
+# Timers
 #
 execute if score #limitedlife settings matches 1 run function lifeseries:time/time
+execute unless score &set_time sessionTime matches -1 run function lifeseries:time/session/count_down
 #
 # Title
 #
