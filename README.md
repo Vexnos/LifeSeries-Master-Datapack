@@ -28,7 +28,7 @@ Next there are some admin only triggers to spawn the Enchanting Table and Option
 
 ## Gameplay
 1. Run `/trigger start` to start your session (ONLY RUN THIS ONCE).
-2. To Pause your session, run `/trigger pause`, likewise to resume, run `/trigger resume`. Note that running the resume function will trigger the boogeyman again, if you don't want this, run `/schedule clear thirdlife:boogeyman/notice` after running `/trigger resume`.
+2. To Pause your session, run `/trigger pause`, likewise to resume, run `/trigger resume`. Note that running the resume function will trigger the boogeyman again, if you don't want this, run `/schedule clear lifeseries:boogeyman/notice` after running `/trigger resume`.
 3. The boogeyman runs automatically on modes where it's enabled. To manually run the boogeyman, run `/trigger boogeyman`.
     * If the Boogeyman succeeds, they will automatically be cured unless a player is killed by a trap. If the kill was the Boogeyman's but they aren't cured, instruct that player to run `/trigger cure`
     * If the Boogeyman fails, then run `/trigger fail` to fail all boogeymen who haven't killed a player at the end of your session.

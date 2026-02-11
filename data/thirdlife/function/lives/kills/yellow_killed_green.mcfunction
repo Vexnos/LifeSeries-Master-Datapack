@@ -1,7 +1,0 @@
-#
-# Description: If a yellow name kills a green name, add 30 minutes
-# Called by: thirdlife:lives/kill
-# Entity @s: Player
-#
-execute if score #limitedlife settings matches 1 as @s run function thirdlife:time/30
-advancement revoke @s only thirdlife:yellow_killed_green

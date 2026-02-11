@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "thirdlife:init",
+        "lifeseries:init",
         "unlock_recipes:unlock_all"
     ]
 }
