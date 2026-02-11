@@ -12,8 +12,8 @@ execute if score #boogeymen rolls matches 3 run tag @r[tag=!out,team=!red,limit=
 #
 # Sounds
 #
-execute as @a[tag=boogeyman] at @s run playsound lastlife:boogeyman master @s
-execute as @a[tag=!boogeyman] at @s run playsound lastlife:boogeyman_not master @s
+execute as @a[tag=boogeyman] at @s run playsound thirdlife:boogeyman master @s
+execute as @a[tag=!boogeyman] at @s run playsound thirdlife:boogeyman_not master @s
 #
 # Titles
 #

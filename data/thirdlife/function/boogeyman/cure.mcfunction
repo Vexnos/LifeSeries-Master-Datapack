@@ -5,7 +5,7 @@
 #
 # Sound and Titles
 #
-execute as @s[tag=boogeyman] at @s run playsound lastlife:boogeyman_cure master @s
+execute as @s[tag=boogeyman] at @s run playsound thirdlife:boogeyman_cure master @s
 title @s[tag=boogeyman] title {text:"You are CURED!",color:"green"}
 #
 # Add time if limited life is enabled and remove tag
