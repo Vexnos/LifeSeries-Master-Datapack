@@ -3,7 +3,6 @@
 # Called by: lifeseries:time/time
 # Entity @s: Player
 #
-advancement revoke @s only lifeseries:died_to_boogeyman
 scoreboard players operation @s hours = @s time
 scoreboard players operation @s hours /= #hours hours
 scoreboard players operation @s minutes = @s time
