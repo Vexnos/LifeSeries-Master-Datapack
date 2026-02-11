@@ -55,4 +55,5 @@ execute as @a[scores={fail=1..}] run function lifeseries:boogeyman/fail
 execute as @a[scores={placeEnchantingTable=1..}] run function lifeseries:enchanting_table/trigger
 execute as @a[scores={placeSpawn=1..}] run function lifeseries:triggers/place_spawn
 execute as @a[scores={setSessionTime=1..}] run function lifeseries:time/session/trigger
+execute as @a[scores={setSessionTime=-1}] run function lifeseries:time/session/trigger
 execute as @a[scores={getSessionTime=1..}] run function lifeseries:triggers/getsessiontime
