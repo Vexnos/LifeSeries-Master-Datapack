@@ -1,1 +1,5 @@
 data/thirdlife/function/players.mcfunction
+build.sh
+LifeSeries_Data_*
+LifeSeries_Resources_*
+version_info.txt
