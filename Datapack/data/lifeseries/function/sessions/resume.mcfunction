@@ -17,7 +17,7 @@ execute unless score &set_time sessionTime matches -1 run function lifeseries:se
 #
 # Boogeyman
 #
-execute if score $boogeyman settings matches 1 run schedule function lifeseries:boogeyman/notice 300s
+execute if score $boogeyman settings matches 1 run schedule function lifeseries:boogeyman/5_minutes 300s
 #
 # Title
 #

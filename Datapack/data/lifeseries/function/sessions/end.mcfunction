@@ -13,7 +13,7 @@ gamerule pvp false
 # Timer
 #
 execute if score #limitedlife settings matches 1 run schedule clear lifeseries:time/time
-schedule clear lifeseries:boogeyman/notice
+schedule clear lifeseries:boogeyman/5_minutes
 schedule clear lifeseries:boogeyman/choose_notice
 schedule clear lifeseries:boogeyman/1_minute
 schedule clear lifeseries:boogeyman/countdown

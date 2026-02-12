@@ -32,7 +32,7 @@ Next there are some admin only triggers to spawn the Enchanting Table and Option
 ## Gameplay
 1. Run `/trigger setSessionTime set <value_in_hours>` where `<value_in_hours>` is the amount of hours you want your session to last. Once this timer expires, the session will end. If you do not wish for this to happen, set `<value_in_hours>` to `-1` to disable the session timer.
 2. Run `/trigger start` to start your session (ONLY RUN THIS ONCE).
-3. To Pause your session, run `/trigger pause`, likewise to resume, run `/trigger resume`. Note that running the resume function will trigger the boogeyman again, if you don't want this, run `/schedule clear lifeseries:boogeyman/notice` after running `/trigger resume`.
+3. To Pause your session, run `/trigger pause`, likewise to resume, run `/trigger resume`. Note that running the resume function will trigger the boogeyman again, if you don't want this, run `/schedule clear lifeseries:boogeyman/5_minutes` after running `/trigger resume`.
 4. The boogeyman runs automatically on modes where it's enabled. To manually run the boogeyman, run `/trigger boogeyman`.
     * If the Boogeyman succeeds, they will automatically be cured unless a player is killed by a trap. If the kill was the Boogeyman's but they aren't cured, instruct that player to run `/trigger cure`
     * If the Boogeyman fails, then run `/trigger fail` to fail all boogeymen who haven't killed a player at the end of your session.

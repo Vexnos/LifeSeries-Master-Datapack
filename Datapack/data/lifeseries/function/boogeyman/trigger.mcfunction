@@ -6,7 +6,7 @@
 # Clear all boogeyman functions to avoid conflicts
 #
 schedule clear lifeseries:boogeyman/countdown
-schedule clear lifeseries:boogeyman/notice
+schedule clear lifeseries:boogeyman/5_minutes
 schedule clear lifeseries:boogeyman/1_minute
 schedule clear lifeseries:boogeyman/choose_notice
 #

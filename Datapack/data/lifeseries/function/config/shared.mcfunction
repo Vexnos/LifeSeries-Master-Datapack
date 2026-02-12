@@ -56,5 +56,5 @@ schedule clear lifeseries:time/time
 schedule clear lifeseries:sessions/count_down
 schedule clear lifeseries:boogeyman/countdown
 schedule clear lifeseries:boogeyman/choose
-schedule clear lifeseries:boogeyman/notice
+schedule clear lifeseries:boogeyman/5_minutes
 schedule clear lifeseries:random/notice

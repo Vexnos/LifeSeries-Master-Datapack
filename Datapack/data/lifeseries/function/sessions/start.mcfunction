@@ -21,7 +21,7 @@ execute if score #lastlife settings matches 1 if score #sessions sessions matche
 #
 # Boogeyman
 #
-execute if score $boogeyman settings matches 1 run schedule function lifeseries:boogeyman/notice 300s
+execute if score $boogeyman settings matches 1 run schedule function lifeseries:boogeyman/5_minutes 300s
 #
 # Timers
 #

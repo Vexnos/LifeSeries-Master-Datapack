@@ -1,6 +1,6 @@
 #
 # Description: Countdown towards the boogeyman being chosen
-# Called by: lifeseries:boogeyman/notice
+# Called by: lifeseries:boogeyman/5_minutes
 # Entity @s: Player
 #
 # Countdown colours
