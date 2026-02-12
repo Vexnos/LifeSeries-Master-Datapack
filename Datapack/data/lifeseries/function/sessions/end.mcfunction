@@ -23,10 +23,6 @@ schedule clear lifeseries:sessions/count_down
 #
 execute if score $boogeyman settings matches 1 run function lifeseries:boogeyman/fail
 #
-# Fail the Society
-#
-execute if score $secretsociety settings matches 1 as @a[tag=secret_society] run tag @s remove secret_society
-#
 # Title
 #
 title @a actionbar {text:"Session Ended",color:"red"}

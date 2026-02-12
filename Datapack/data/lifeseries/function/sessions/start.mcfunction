@@ -23,10 +23,6 @@ execute if score #lastlife settings matches 1 if score #sessions sessions matche
 #
 execute if score $boogeyman settings matches 1 run schedule function lifeseries:boogeyman/notice 300s
 #
-# Secret Society
-#
-execute if score #pastlife settings matches 1 if score #sessions sessions matches 3 run function lifeseries:secretsociety/choose
-#
 # Timers
 #
 execute if score #limitedlife settings matches 1 run function lifeseries:time/time

@@ -15,7 +15,6 @@ gamerule keepInventory true
 #
 scoreboard players set #pastlife settings 1
 scoreboard players set $boogeyman settings 1
-scoreboard players set $secretsociety settings 1
 #
 # Scoreboards
 #
