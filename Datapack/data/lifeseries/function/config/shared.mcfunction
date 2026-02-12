@@ -17,9 +17,12 @@ gamerule pvp false
 scoreboard players set #thirdlife settings 0
 scoreboard players set #lastlife settings 0
 scoreboard players set #limitedlife settings 0
+scoreboard players set #pastlife settings 0
 scoreboard players set $boogeyman settings 0
 scoreboard players set $lifetransfer settings 0
+scoreboard players set $secretsociety settings 0
 scoreboard players set &time sessionTime 0
+scoreboard players set #sessions sessions 0
 #
 # HP
 #
@@ -51,7 +54,7 @@ advancement revoke @a everything
 # Functions
 #
 schedule clear lifeseries:time/time
-schedule clear lifeseries:time/session/count_down
+schedule clear lifeseries:sessions/count_down
 schedule clear lifeseries:boogeyman/countdown
 schedule clear lifeseries:boogeyman/choose
 schedule clear lifeseries:boogeyman/notice

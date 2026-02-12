@@ -20,6 +20,7 @@ scoreboard objectives add seconds dummy
 scoreboard objectives add minutes dummy
 scoreboard objectives add hours dummy
 scoreboard objectives add pause trigger
+scoreboard objectives add end trigger
 scoreboard objectives add resume trigger
 scoreboard objectives add config trigger
 scoreboard objectives add start trigger
@@ -31,6 +32,7 @@ scoreboard objectives add placeSpawn trigger
 scoreboard objectives add setSessionTime trigger
 scoreboard objectives add getSessionTime trigger
 scoreboard objectives add sessionTime dummy
+scoreboard objectives add sessions dummy
 scoreboard objectives add hp health {text:"❤",color:"red"}
 scoreboard objectives setdisplay below_name hp
 #

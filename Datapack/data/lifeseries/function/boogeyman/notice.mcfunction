@@ -1,11 +1,12 @@
 #
 # Description: 5 Minute Notice for choosing the Boogeyman
-# Called by: lifeseries:start, lifeseries:resume
+# Called by: lifeseries:sessions/start, lifeseries:sessions/resume
 # Entity @s:
 #
 # Titles and Sound
 #
-tellraw @a {text:"The Boogeymen are being chosen in 5 minutes",color:"red"}
+execute unless score #pastlife settings matches 1 run tellraw @a {text:"The Boogeymen are being chosen in 5 minutes",color:"red"}
+execute if score #pastlife settings matches 1 run tellraw @a {text:"The Boogeymen are being chosen in 5 minutes",color:"dark_red"}
 execute as @a at @s run playsound minecraft:entity.lightning_bolt.thunder master @s
 #
 # Set Countdown to 3 seconds

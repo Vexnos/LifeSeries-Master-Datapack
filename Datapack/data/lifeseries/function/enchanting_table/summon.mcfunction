@@ -1,6 +1,6 @@
 #
 # Description: Summon falling Enchanting Table
-# Called by: lifeseries:start
+# Called by: lifeseries:sessions/start
 # Entity @s: Player
 #
 # Poof

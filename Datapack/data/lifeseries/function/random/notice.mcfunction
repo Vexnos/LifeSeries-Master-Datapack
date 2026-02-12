@@ -1,6 +1,6 @@
 #
 # Description: Notify players that lives will be randomly rolled
-# Called by: lifeseries:start, lifeseries:random/trigger
+# Called by: lifeseries:sessions/start, lifeseries:random/trigger
 # Entity @s: Player
 #
 tellraw @a {text:"Randomly Generating Lives...",color:"gray"}

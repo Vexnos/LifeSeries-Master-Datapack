@@ -3,5 +3,5 @@
 # Called by: lifeseries:main
 # Entity @s: Player
 #
-execute as @s run function lifeseries:start
+execute as @s run function lifeseries:sessions/start
 scoreboard players set @s start 0

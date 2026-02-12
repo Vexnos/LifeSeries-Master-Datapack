@@ -13,8 +13,7 @@ gamerule pvp true
 # Timer
 #
 execute if score #limitedlife settings matches 1 run function lifeseries:time/time
-execute if score &set_time sessionTime matches 1.. if score &time sessionTime matches 0 run scoreboard players operation &time sessionTime = &set_time sessionTime
-execute unless score &set_time sessionTime matches -1 run function lifeseries:time/session/count_down
+execute unless score &set_time sessionTime matches -1 run function lifeseries:sessions/count_down
 #
 # Boogeyman
 #
@@ -22,5 +21,5 @@ execute if score $boogeyman settings matches 1 run schedule function lifeseries:
 #
 # Title
 #
-title @a actionbar {text:"Session Started",color:"green"}
+title @a actionbar {text:"Session Resumed",color:"green"}
 execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s

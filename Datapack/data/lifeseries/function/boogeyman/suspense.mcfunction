@@ -7,7 +7,8 @@
 #
 title @a times 10 50 20
 title @a title {text:"You are...",color:"yellow"}
-execute as @a at @s run playsound minecraft:ui.button.click master @s
+execute unless score #pastlife settings matches 1 as @a at @s run playsound minecraft:ui.button.click master @s
+execute if score #pastlife settings matches 1 as @a at @s run playsound minecraft:block.note_block.didgeridoo master @s
 execute as @a at @s run playsound lifeseries:boogeyman_suspense master @s
 #
 # Choose the Boogeyman after leaving suspense

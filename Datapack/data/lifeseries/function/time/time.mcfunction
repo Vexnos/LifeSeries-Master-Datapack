@@ -1,6 +1,6 @@
 #
 # Description: Count down timer for players in Limited Life
-# Called by: lifeseries:start, lifeseries:resume
+# Called by: lifeseries:sessions/start, lifeseries:sessions/resume
 # Entity @s: Player
 #
 scoreboard players remove @a[scores={time=1..}] time 1

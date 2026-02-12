@@ -12,7 +12,8 @@ execute if score #countdown countdown matches 1 run title @a title {score:{name:
 #
 # Sound
 #
-execute as @a at @s run playsound minecraft:ui.button.click master @s
+execute unless score #pastlife settings matches 1 as @a at @s run playsound minecraft:ui.button.click master @s
+execute if score #pastlife settings matches 1 as @a at @s run playsound minecraft:block.note_block.didgeridoo master @s
 #
 # Counts down until countdown score reaches 0, then triggers suspense function
 #
