@@ -10,9 +10,9 @@ schedule clear lifeseries:boogeyman/notice
 schedule clear lifeseries:boogeyman/1_minute
 schedule clear lifeseries:boogeyman/choose_notice
 #
-# Set countdown to 5 seconds
+# Set countdown to 3 seconds
 #
-scoreboard players set #countdown countdown 5
+scoreboard players set #countdown countdown 3
 #
 # Start the Countdown and notify players
 #

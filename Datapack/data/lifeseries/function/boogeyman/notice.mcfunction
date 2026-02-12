@@ -8,9 +8,9 @@
 tellraw @a {text:"The Boogeymen are being chosen in 5 minutes",color:"red"}
 execute as @a at @s run playsound minecraft:entity.lightning_bolt.thunder master @s
 #
-# Set Countdown to 5 seconds
+# Set Countdown to 3 seconds
 #
-scoreboard players set #countdown countdown 5
+scoreboard players set #countdown countdown 3
 #
 # Schedule notice and countdown functions
 #
