@@ -17,9 +17,9 @@ execute if score #limitedlife settings matches 1 as @a[scores={deaths=1..},tag=!
 # Boogeyman Functions
 #
 execute if score #limitedlife settings matches 1 run scoreboard players enable @a[tag=!out] 30
-execute unless score #thirdlife settings matches 1 run scoreboard players enable @a[tag=!out,tag=boogeyman] cure
+execute if score $boogeyman settings matches 1 run scoreboard players enable @a[tag=!out,tag=boogeyman] cure
 execute if score #limitedlife settings matches 1 as @a[scores={30=1..}] run function lifeseries:time/30
-execute unless score #thirdlife settings matches 1 as @a[scores={cure=1..}] run function lifeseries:boogeyman/cure
+execute if score $boogeyman settings matches 1 as @a[scores={cure=1..}] run function lifeseries:boogeyman/cure
 #
 # Death Trigger for Limited Life
 #
