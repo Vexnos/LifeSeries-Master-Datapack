@@ -5,8 +5,7 @@
 #
 # Titles and Sound
 #
-execute unless score #pastlife settings matches 1 run tellraw @a {text:"The Boogeymen are being chosen in 5 minutes",color:"red"}
-execute if score #pastlife settings matches 1 run tellraw @a {text:"The Boogeymen are being chosen in 5 minutes",color:"dark_red"}
+tellraw @a {text:"The Boogeymen are being chosen in 5 minutes",color:"dark_red"}
 execute as @a at @s run playsound minecraft:entity.lightning_bolt.thunder master @s
 #
 # Set Countdown to 3 seconds

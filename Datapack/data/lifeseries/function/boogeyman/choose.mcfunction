@@ -21,7 +21,6 @@ title @a[tag=boogeyman] title {text:"The Boogeyman",color:"red"}
 title @a[tag=!boogeyman] title {text:"NOT The Boogeyman",color:"green"}
 title @a times 10 70 20
 #
-# Private tellraw message to the boogeyman
+# Private tellraw messages to the boogeyman
 #
-execute unless score #pastlife settings matches 1 run tellraw @a[tag=boogeyman] [{text:"You are the ",color:"gray"},{text:"Boogeyman",color:"red"},{text:". You must by any means necessary kill a ",color:"gray"},{text:"Green ",color:"green"},{text:"or ",color:"gray"},{text:"Yellow ",color:"yellow"},{text:"player this session to be cured. If you should fail, you will turn ",color:"gray"},{text:"Red ",color:"red"},{text:"next session. All alliances and ties are severed while you are the Boogeyman.",color:"gray"}]
-execute if score #pastlife settings matches 1 run schedule function lifeseries:boogeyman/messages/1 2s
+schedule function lifeseries:boogeyman/messages/1 2s
