@@ -2,12 +2,11 @@
     "type": "minecraft:crafting_shaped",
     "category": "misc",
     "key": {
-        "#": "minecraft:iron_bars",
-        "$": "minecraft:blaze_powder"
+        "#": "minecraft:iron_bars"
     },
     "pattern": [
         "###",
-        "#$#",
+        "# #",
         "###"
     ],
     "result": {
