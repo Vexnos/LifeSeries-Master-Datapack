@@ -46,6 +46,11 @@ weather clear
 #
 gamemode survival @a
 #
+# Set XP to 0
+#
+xp set @a 0 points
+xp set @a 0 levels
+#
 # Revoke all advancements
 #
 advancement revoke @a everything
