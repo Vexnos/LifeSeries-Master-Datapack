@@ -13,7 +13,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:skeleton_horse_spawn_egg",
-                    "weight": 1,
+                    "weight": 2,
                     "functions": [
                         {
                             "function": "minecraft:set_components",
@@ -35,7 +35,7 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:camel_spawn_egg",
-                    "weight": 2,
+                    "weight": 3,
                     "functions": [
                         {
                             "function": "minecraft:set_components",
@@ -53,6 +53,11 @@
                             }
                         }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wolf_spawn_egg",
+                    "weight": 1
                 }
             ]
         },
