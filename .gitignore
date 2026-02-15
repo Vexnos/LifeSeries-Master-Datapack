@@ -1,4 +1,5 @@
-data/thirdlife/function/players.mcfunction
+Datapack/data/lifeseries/function/players.mcfunction
+Datapack/data/lifeseries/function/debug/
 build.sh
 LifeSeries_Data_*
 LifeSeries_Resources_*
