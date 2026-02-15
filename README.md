@@ -44,6 +44,7 @@ Next there are some admin only triggers to spawn the Enchanting Table and Option
 * Some Hostile and Passive mobs have a 5% chance to drop their spawn egg, this increases with Looting.
 * Wither Skeletons have an increased chance to drop their Wither Skulls (now 5% instead of 2.5%).
 * Skeleton and Zombie Horse Spawn Eggs are available in Dungeon Chests (They will spawn already tamed and with saddles like in Secret Life).
+* You can no longer obtain Netherite Ingots from Treasure Bastions, only Scrap or Ancient Debris.
 
 ### Custom Recipes
 Inside the datapack is a bundled function to unlock all recipes for all players.
@@ -59,3 +60,6 @@ Inside the datapack is a bundled function to unlock all recipes for all players.
 * Mending, Swift Sneak, and Soul Speed are now available from the Enchanting Table.
 * Silk Touch and Mending have higher weights, allowing them to appear more frequently in the Enchanting Table.
 * Soul Speed and Swift Sneak are available in Villager Trades.
+
+### Worldgen
+* The amount of Ancient Debris that can generate in a world is halved.
