@@ -11,3 +11,4 @@ clear @a golden_helmet
 clear @a iron_helmet
 clear @a diamond_helmet
 clear @a netherite_helmet
+clear @a elytra
