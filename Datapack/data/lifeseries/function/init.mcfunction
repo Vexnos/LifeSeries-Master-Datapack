@@ -46,18 +46,23 @@ scoreboard players set #hours hours 3600
 #
 team add dark_green
 team modify dark_green color dark_green
+team modify dark_green seeFriendlyInvisibles false
 
 team add green
 team modify green color green
+team modify green seeFriendlyInvisibles false
 
 team add yellow
 team modify yellow color yellow
+team modify yellow seeFriendlyInvisibles false
 
 team add red
 team modify red color red
+team modify red seeFriendlyInvisibles false
 
 team add dead
 team modify dead color gray
+team modify dead seeFriendlyInvisibles false
 #
 # Clear Helmets
 #
