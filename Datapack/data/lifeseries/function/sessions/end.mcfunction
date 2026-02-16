@@ -8,6 +8,7 @@
 gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule doMobSpawning false
+gamerule spawnMonsters false
 gamerule pvp false
 #
 # Timer

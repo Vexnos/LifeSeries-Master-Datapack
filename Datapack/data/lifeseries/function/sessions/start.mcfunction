@@ -16,6 +16,7 @@ execute if score #sessions sessions matches 1 run function lifeseries:sessions/f
 gamerule doDaylightCycle true
 gamerule doWeatherCycle true
 gamerule doMobSpawning true
+gamerule spawnMonsters true
 execute unless score #lastlife settings matches 1 run gamerule pvp true
 execute if score #lastlife settings matches 1 if score #sessions sessions matches 2.. run gamerule pvp true
 #
