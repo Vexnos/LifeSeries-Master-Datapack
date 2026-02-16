@@ -23,5 +23,10 @@
         "sounds": [
             "lifeseries:boogeyman_cure"
         ]
+    },
+    "givelife": {
+        "sounds": [
+            "lifeseries:givelife"
+        ]
     }
 }
