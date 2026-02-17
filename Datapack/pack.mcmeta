@@ -35,10 +35,6 @@
         "block": [
             {
                 "namespace": "minecraft",
-                "path": "recipe/enchanting_table"
-            },
-            {
-                "namespace": "minecraft",
                 "path": "recipe/leather_helmet"
             },
             {
