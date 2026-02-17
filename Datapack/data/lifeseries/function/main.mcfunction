@@ -28,8 +28,7 @@ execute if score #limitedlife settings matches 1 as @a[scores={death=1..}] run f
 #
 # Give Life Triggers
 #
-execute if score $lifetransfer settings matches 1 unless score #limitedlife settings matches 1 run scoreboard players enable @a[tag=!out,team=!red] givelife
-execute if score $lifetransfer settings matches 1 if score #limitedlife settings matches 1 run scoreboard players enable @a[tag=!out,scores={time=3601..}] givelife
+execute if score $lifetransfer settings matches 1 run scoreboard players enable @a[tag=!out,team=!red] givelife
 execute if score $lifetransfer settings matches 1 as @a[scores={givelife=1..}] run function lifeseries:lifetransfer/checkplayer
 execute if score $lifetransfer settings matches 0 run scoreboard players set @a givelife 0
 #
