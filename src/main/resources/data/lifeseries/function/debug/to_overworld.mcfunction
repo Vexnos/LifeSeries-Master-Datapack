@@ -1,1 +1,0 @@
-execute in minecraft:overworld run tp @a[tag=admin] 7776 150 806

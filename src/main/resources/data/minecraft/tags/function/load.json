@@ -1,8 +1,0 @@
-{
-    "replace": false,
-    "values": [
-        "lifeseries:init",
-        "lifeseries:anti_nether",
-        "unlock_recipes:unlock_all"
-    ]
-}

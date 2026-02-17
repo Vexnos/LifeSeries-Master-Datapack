@@ -1,1 +1,0 @@
-execute in minecraft:the_end run tp @a[tag=admin] 0 100 0
