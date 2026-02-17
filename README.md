@@ -60,6 +60,3 @@ Inside the datapack is a bundled function to unlock all recipes for all players.
 * Mending, Swift Sneak, and Soul Speed are now available from the Enchanting Table.
 * Silk Touch and Mending have higher weights, allowing them to appear more frequently in the Enchanting Table.
 * Soul Speed and Swift Sneak are available in Villager Trades.
-
-### Worldgen
-* The amount of Ancient Debris that can generate in a world is halved.
