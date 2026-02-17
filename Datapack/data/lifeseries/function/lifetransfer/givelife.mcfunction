@@ -14,4 +14,5 @@ execute unless entity @a[tag=addlife] at @s run playsound minecraft:entity.ender
 #
 # Transfer the life if a valid player exists
 #
-execute as @s if entity @a[tag=addlife] run function lifeseries:lifetransfer/addlife
+execute as @s if entity @a[tag=addlife] unless score #limitedlife settings matches 1 run function lifeseries:lifetransfer/addlife/lastlife
+execute as @s if entity @a[tag=addlife] if score #limitedlife settings matches 1 run function lifeseries:lifetransfer/addlife/limitedlife
