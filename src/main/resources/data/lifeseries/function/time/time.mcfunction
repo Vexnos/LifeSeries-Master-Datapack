@@ -1,0 +1,21 @@
+#
+# Description: Count down timer for players in Limited Life
+# Called by: lifeseries:sessions/start, lifeseries:sessions/resume
+# Entity @s: Player
+#
+scoreboard players remove @a[scores={time=1..}] time 1
+#
+# Function to convert raw time into Hours, Minutes, and Seconds
+#
+execute as @a[tag=!out] run function lifeseries:time/hms_convert
+#
+# Display time in the color of the player's team
+#
+execute as @a[team=dark_green] run function lifeseries:time/colors/dark_green
+execute as @a[team=green] run function lifeseries:time/colors/green
+execute as @a[team=yellow] run function lifeseries:time/colors/yellow
+execute as @a[team=red] run function lifeseries:time/colors/red
+#
+# Run Timer every 1 second
+#
+schedule function lifeseries:time/time 1s

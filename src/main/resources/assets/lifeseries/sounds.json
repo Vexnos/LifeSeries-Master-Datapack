@@ -1,0 +1,32 @@
+{
+    "boogeyman": {
+        "sounds": [
+            "lifeseries:boogeyman"
+        ]
+    },
+    "boogeyman_not": {
+        "sounds": [
+            "lifeseries:boogeyman_not"
+        ]
+    },
+    "boogeyman_suspense": {
+        "sounds": [
+            "lifeseries:boogeyman_suspense"
+        ]
+    },
+    "boogeyman_fail": {
+        "sounds": [
+            "lifeseries:boogeyman_fail"
+        ]
+    },
+    "boogeyman_cure": {
+        "sounds": [
+            "lifeseries:boogeyman_cure"
+        ]
+    },
+    "givelife": {
+        "sounds": [
+            "lifeseries:givelife"
+        ]
+    }
+}

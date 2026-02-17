@@ -1,0 +1,30 @@
+#
+# Description: End Session
+# Called by: lifeseries:triggers/end
+# Entity @s: None
+#
+# Gamerules
+#
+gamerule doDaylightCycle false
+gamerule doWeatherCycle false
+gamerule doMobSpawning false
+gamerule spawnMonsters false
+gamerule pvp false
+#
+# Timer
+#
+execute if score #limitedlife settings matches 1 run schedule clear lifeseries:time/time
+schedule clear lifeseries:boogeyman/5_minutes
+schedule clear lifeseries:boogeyman/choose_notice
+schedule clear lifeseries:boogeyman/1_minute
+schedule clear lifeseries:boogeyman/countdown
+schedule clear lifeseries:sessions/count_down
+#
+# Fail the Boogeyman
+#
+execute if score $boogeyman settings matches 1 run function lifeseries:boogeyman/fail
+#
+# Title
+#
+title @a actionbar {text:"Session Ended",color:"red"}
+execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master @s

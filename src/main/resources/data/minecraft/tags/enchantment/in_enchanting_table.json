@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "minecraft:mending",
+        "minecraft:soul_speed",
+        "minecraft:swift_sneak"
+    ]
+}

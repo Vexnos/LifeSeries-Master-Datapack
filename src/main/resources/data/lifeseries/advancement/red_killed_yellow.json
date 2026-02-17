@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "player": {
+                    "type": "player",
+                    "team": "red"
+                },
+                "entity": {
+                    "type": "player",
+                    "team": "yellow"
+                }
+            }
+        }
+    }
+}
