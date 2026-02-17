@@ -9,7 +9,6 @@ scoreboard players add @a[tag=addlife] time 3600
 # Particles & Sounds
 #
 execute at @a[tag=addlife] run particle minecraft:happy_villager ~ ~1 ~ 0.4 0.8 0.4 0 100 force
-execute at @s run particle minecraft:totem_of_undying ~ ~1 ~ 0.5 1 0.5 0.25 100 force
 execute as @s run givelife
 execute as @a[tag=addlife] at @s run playsound lifeseries:givelife master @s
 #
