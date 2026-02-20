@@ -1,6 +1,6 @@
 #
 # Description: Check players are within 5 blocks of each other
-# Called by: lifeseries:lifetransfer/checkplayer
+# Called by: lifeseries:lifetransfer/checkplayer/lastlife, lifeseries:lifetransfer/checkplayer/limitedlife
 # Entity @s: Player
 #
 # Add a tag to valid player
