@@ -36,6 +36,10 @@ scoreboard objectives add sessions dummy
 scoreboard objectives add hp health {text:"❤",color:"red"}
 scoreboard objectives setdisplay below_name hp
 #
+# If the set time for the session is not set, set it to -1 to avoid issues
+#
+execute unless score &set_time sessionTime matches -2147483648..2147483647 run scoreboard players set &set_time sessionTime -1
+#
 # Values for time conversion
 #
 scoreboard players set #seconds seconds 60

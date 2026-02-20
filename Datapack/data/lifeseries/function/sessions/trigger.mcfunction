@@ -5,9 +5,9 @@
 #
 # Set timer
 #
-scoreboard players operation &time sessionTime = @s setSessionTime
-execute unless score @s setSessionTime matches -1 run scoreboard players operation &time sessionTime *= #hours hours
-scoreboard players operation &set_time sessionTime = &time sessionTime
+scoreboard players operation &set_time sessionTime = @s setSessionTime
+execute unless score @s setSessionTime matches -1 run scoreboard players operation &set_time sessionTime *= #hours hours
+scoreboard players operation &time sessionTime = &set_time sessionTime
 #
 # Titles & Sound
 #

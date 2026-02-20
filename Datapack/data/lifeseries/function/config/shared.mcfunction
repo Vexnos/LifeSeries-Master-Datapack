@@ -20,8 +20,11 @@ scoreboard players set #limitedlife settings 0
 scoreboard players set #pastlife settings 0
 scoreboard players set $boogeyman settings 0
 scoreboard players set $lifetransfer settings 0
-scoreboard players set &time sessionTime 0
 scoreboard players set #sessions sessions 0
+#
+# If the time scoreboard is empty, set it from the stored time scoreboard
+#
+execute unless score &time sessionTime matches -2147483648..2147483647 run scoreboard players set &time sessionTime -1
 #
 # Scoreboard Displays
 #
