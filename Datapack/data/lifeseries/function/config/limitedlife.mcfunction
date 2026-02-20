@@ -17,6 +17,10 @@ scoreboard players set #limitedlife settings 1
 scoreboard players set $boogeyman settings 1
 scoreboard players set $lifetransfer settings 1
 #
+# Scoreboard Displays
+#
+scoreboard objectives setdisplay list
+#
 # Scoreboards
 #
 scoreboard players set @a time 86400

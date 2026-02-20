@@ -13,8 +13,3 @@ execute if score #lastlife settings matches 1 as @a at @s run playsound minecraf
 # Grace Period Resistance in Last Life
 #
 execute if score #lastlife settings matches 1 run effect give @a resistance 120 9 true
-#
-# Scores
-#
-execute if score #limitedlife settings matches 0 run scoreboard objectives setdisplay list lives
-execute if score #limitedlife settings matches 1 run scoreboard objectives setdisplay list

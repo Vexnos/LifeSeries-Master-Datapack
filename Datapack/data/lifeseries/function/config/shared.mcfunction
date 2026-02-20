@@ -23,6 +23,10 @@ scoreboard players set $lifetransfer settings 0
 scoreboard players set &time sessionTime 0
 scoreboard players set #sessions sessions 0
 #
+# Scoreboard Displays
+#
+scoreboard objectives setdisplay list lives
+#
 # HP
 #
 execute as @a run attribute @s minecraft:max_health base reset
