@@ -18,7 +18,7 @@ schedule clear lifeseries:boogeyman/5_minutes
 schedule clear lifeseries:boogeyman/choose_notice
 schedule clear lifeseries:boogeyman/1_minute
 schedule clear lifeseries:boogeyman/countdown
-schedule clear lifeseries:sessions/count_down
+schedule clear lifeseries:sessions/time
 #
 # Fail the Boogeyman
 #

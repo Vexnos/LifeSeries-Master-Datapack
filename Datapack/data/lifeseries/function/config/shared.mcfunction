@@ -62,7 +62,7 @@ advancement revoke @a everything
 # Functions
 #
 schedule clear lifeseries:time/time
-schedule clear lifeseries:sessions/count_down
+schedule clear lifeseries:sessions/time
 schedule clear lifeseries:boogeyman/countdown
 schedule clear lifeseries:boogeyman/choose
 schedule clear lifeseries:boogeyman/5_minutes

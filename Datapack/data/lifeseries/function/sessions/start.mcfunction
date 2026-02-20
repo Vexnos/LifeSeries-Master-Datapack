@@ -28,7 +28,7 @@ execute if score $boogeyman settings matches 1 run schedule function lifeseries:
 #
 execute if score #limitedlife settings matches 1 run function lifeseries:time/time
 execute if score &set_time sessionTime matches 1.. if score &time sessionTime matches 0 run scoreboard players operation &time sessionTime = &set_time sessionTime
-execute unless score &set_time sessionTime matches -1 run function lifeseries:sessions/count_down
+execute unless score &set_time sessionTime matches -1 run function lifeseries:sessions/time
 #
 # Title
 #

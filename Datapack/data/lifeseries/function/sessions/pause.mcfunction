@@ -14,7 +14,7 @@ gamerule pvp false
 # Timer
 #
 execute if score #limitedlife settings matches 1 run schedule clear lifeseries:time/time
-execute unless score &set_time sessionTime matches -1 run schedule clear lifeseries:sessions/count_down
+execute unless score &set_time sessionTime matches -1 run schedule clear lifeseries:sessions/time
 #
 # Title
 #

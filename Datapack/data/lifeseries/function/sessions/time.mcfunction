@@ -11,4 +11,4 @@ execute if score &time sessionTime matches ..0 run return run function lifeserie
 #
 # If timer hasn't run out
 #
-schedule function lifeseries:sessions/count_down 1s
+schedule function lifeseries:sessions/time 1s
