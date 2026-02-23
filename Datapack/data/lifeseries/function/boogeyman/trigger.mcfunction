@@ -16,7 +16,7 @@ scoreboard players set #countdown countdown 3
 #
 # Start the Countdown and notify players
 #
-function lifeseries:boogeyman/countdown
+schedule function lifeseries:boogeyman/countdown 10s
 function lifeseries:boogeyman/choose_notice
 #
 # Reset trigger score

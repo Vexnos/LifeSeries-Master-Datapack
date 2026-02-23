@@ -14,6 +14,6 @@ scoreboard players set #countdown countdown 3
 #
 # Schedule notice and countdown functions
 #
-schedule function lifeseries:boogeyman/countdown 300s
+schedule function lifeseries:boogeyman/countdown 310s
 schedule function lifeseries:boogeyman/1_minute 240s
 schedule function lifeseries:boogeyman/choose_notice 300s
