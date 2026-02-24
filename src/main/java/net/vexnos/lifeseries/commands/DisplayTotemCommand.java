@@ -7,6 +7,8 @@ import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.server.level.ServerPlayer;
 
+import java.util.Collection;
+
 public class DisplayTotemCommand extends Command {
     // Play Totem Animation
     @Override
@@ -19,16 +21,26 @@ public class DisplayTotemCommand extends Command {
                             playTotemAnimation(player);
                             return 1;
                         })
-                        .then(net.minecraft.commands.Commands.argument("target", EntityArgument.player())
+                        .then(Commands.argument("targets", EntityArgument.players())
                                 .executes(commandContext -> {
-                                    ServerPlayer target = EntityArgument.getPlayer(commandContext, "target");
-                                    playTotemAnimation(target);
-                                    return 1;
+                                    Collection<? extends ServerPlayer> targets = EntityArgument.getPlayers(commandContext, "targets");
+                                    return playTotemAnimation(targets);
                                 }))
         );
     }
 
     private static void playTotemAnimation(ServerPlayer player) {
         player.level().broadcastEntityEvent(player, (byte) 35);
+    }
+
+    private static int playTotemAnimation(Collection<? extends ServerPlayer> players) {
+        int i = 0;
+
+        for (ServerPlayer player : players) {
+            player.level().broadcastEntityEvent(player, (byte) 35);
+            i++;
+        }
+
+        return i;
     }
 }
