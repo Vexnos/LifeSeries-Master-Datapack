@@ -1,19 +1,13 @@
-[
-    {
-        "condition": "minecraft:weather_check",
-        "raining": false
-    },
-    {
-        "condition": "minecraft:entity_properties",
-        "entity": "this",
-        "predicate": {
-            "type": "minecraft:player",
-            "location": {
-                "can_see_sky": true
-            },
-            "flags": {
-                "is_on_fire": false
-            }
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "type": "minecraft:player",
+        "location": {
+            "can_see_sky": true
+        },
+        "flags": {
+            "is_on_fire": false
         }
     }
-]
+}
