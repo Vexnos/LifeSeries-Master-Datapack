@@ -9,6 +9,9 @@ import net.minecraft.commands.Commands;
 import java.util.ArrayList;
 import java.util.List;
 
+import static net.vexnos.lifeseries.Lifeseries.LOGGER;
+import static net.vexnos.lifeseries.Lifeseries.MOD_ID;
+
 public class CommandInitializer {
     public static List<Command> commands = new ArrayList<>();
 
@@ -19,10 +22,13 @@ public class CommandInitializer {
                 Commands.CommandSelection registrationEnvironment
         ) -> {
             commands.add(new DisplayTotemCommand());
+            commands.add(new SetOnFireCommand());
 
             for (Command command : commands ) {
                 command.registerCommand(dispatcher, registryAccess);
             }
+
+            LOGGER.info("Registering mod commands for " + MOD_ID);
         }));
     }
 }
