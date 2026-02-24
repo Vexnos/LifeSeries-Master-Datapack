@@ -1,7 +1,6 @@
 package net.vexnos.lifeseries.commands;
 
 import com.mojang.brigadier.CommandDispatcher;
-import net.minecraft.commands.CommandBuildContext;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
@@ -12,7 +11,7 @@ import java.util.Collection;
 public class DisplayTotemCommand extends Command {
     // Play Totem Animation
     @Override
-    public void registerCommand(CommandDispatcher<CommandSourceStack> dispatcher, CommandBuildContext registryAccess) {
+    public void registerCommand(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(
                 Commands.literal("givelife")
                         .requires(commandSourceStack -> commandSourceStack.hasPermission(2))
