@@ -7,26 +7,29 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.entity.Entity;
+
+import java.util.Collection;
 
 public class SetOnFireCommand extends Command {
-    // Play Totem Animation
+    // Set Entities on Fire
     @Override
     public void registerCommand(CommandDispatcher<CommandSourceStack> dispatcher, CommandBuildContext registryAccess) {
         dispatcher.register(
                 Commands.literal("setfire")
                         .requires(commandSourceStack -> commandSourceStack.hasPermission(2))
-                        .then(Commands.argument("target", EntityArgument.player())
+                        .then(Commands.argument("targets", EntityArgument.entities())
                                 .executes(commandContext -> {
-                                    ServerPlayer player = EntityArgument.getPlayer(commandContext, "target");
-                                    setPlayerOnFire(commandContext.getSource(), player, 100);
+                                    Collection<? extends Entity> entities = EntityArgument.getEntities(commandContext, "targets");
+                                    setEntitiesOnFire(commandContext.getSource(), entities, 100);
                                     return 1;
                                 })
                                 .then(Commands.argument("ticks", IntegerArgumentType.integer(1))
                                         .executes(commandContext -> {
-                                                    ServerPlayer player = EntityArgument.getPlayer(commandContext, "target");
+                                                    Collection<? extends Entity> entities = EntityArgument
+                                                            .getEntities(commandContext, "targets");
                                                     int ticks = IntegerArgumentType.getInteger(commandContext, "ticks");
-                                                    setPlayerOnFire(commandContext.getSource(), player, ticks);
+                                                    setEntitiesOnFire(commandContext.getSource(), entities, ticks);
                                                     return 1;
                                                 }
                                         )
@@ -35,11 +38,14 @@ public class SetOnFireCommand extends Command {
         );
     }
 
-    private void setPlayerOnFire(CommandSourceStack source, ServerPlayer player, int ticks) {
-        player.setRemainingFireTicks(ticks);
+    private void setEntitiesOnFire(CommandSourceStack source, Collection<? extends Entity> entities, int ticks) {
+        for (Entity entity : entities) {
+            entity.setRemainingFireTicks(ticks);
+        }
 
         source.sendSuccess(
-                () -> Component.literal("Set " + player.getName().getString() + " on fire for " + ticks + " ticks"),
+                () -> Component.literal("Set " + entities.size() + " entit" + (entities.size() == 1 ? "y" : "ies")
+                        + " on fire for " + ticks + " ticks"),
                 true
         );
     }
