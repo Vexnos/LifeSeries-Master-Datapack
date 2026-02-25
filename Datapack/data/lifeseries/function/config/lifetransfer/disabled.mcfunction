@@ -1,6 +1,6 @@
 #
 # Description: Disable life transferring from config
-# Called by: lifeseries:settings
+# Called by: lifeseries:config/settings
 # Player @s: Player
 #
 scoreboard players set $lifetransfer settings 0

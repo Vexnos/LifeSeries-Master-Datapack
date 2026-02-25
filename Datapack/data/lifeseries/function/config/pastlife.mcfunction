@@ -1,6 +1,6 @@
 #
 # Description: Load Limited Life Settings
-# Called by: lifeseries:settings
+# Called by: lifeseries:config/settings
 # Entity @s: Player
 #
 # Shared

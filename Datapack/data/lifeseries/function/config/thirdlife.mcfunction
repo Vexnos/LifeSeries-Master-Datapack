@@ -1,6 +1,6 @@
 #
 # Description: Load Third Life Settings
-# Called by: lifeseries:settings
+# Called by: lifeseries:config/settings
 # Entity @s: Player
 #
 # Shared

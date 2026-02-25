@@ -1,6 +1,6 @@
 #
 # Description: Enable boogeyman from config
-# Called by: lifeseries:settings
+# Called by: lifeseries:config/settings
 # Player @s: Player
 #
 scoreboard players set $boogeyman settings 1

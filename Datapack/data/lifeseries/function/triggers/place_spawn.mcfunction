@@ -1,6 +1,6 @@
 #
 # Description: Function to place the spawn template
-# Called by: lifeseries:settings
+# Called by: lifeseries:config/settings
 # Entity @s: Player
 #
 # Set World Spawn and Place Spawn Template
